@@ -1,8 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter as Router } from 'react-router-dom';
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter as Router } from "react-router-dom";
+import { Provider } from "react-redux";
 
-import App from './App';
-import 'antd/dist/antd.css'
+import App from "./App";
+import store from "./app/store";
+import "antd/dist/antd.css";
+//wrapping the provider around the app means the whole app has access to store
+ReactDOM.render(
+  <Router>
+      <Provider store={store}>
+        <App />
+      </Provider>
 
-ReactDOM.render(<Router><App/></Router>, document.getElementById('root'))
+  </Router>,
+  document.getElementById("root")
+);
