@@ -9,13 +9,15 @@ const Cryptocurrencies = ({simplified}) => {
     const count = simplified ? 10 : 100;
     const { data: cryptosList, isFetching } = useGetCryptosQuery(count);
     const [cryptos, setCryptos] = useState(cryptosList?.data?.coins);
-
-    console.log("cryptos", cryptos);
+    const [searchTerm, setSearchTerm] = useState("");
 
     if (isFetching) return "Loading ..."; // apparently this is important when fetching api to make sure if the api is fetched...
 
     return (
         <>
+            <div className="search-crypto">
+                <Input placeholder="Search Cryptocurrency" onChange={(e)=>{setSearchTerm(e.target.value)}}></Input>
+            </div>
             <Row gutter={[32, 32]} className="crypto-card-container">
                 {cryptos?.map((currency) => (
                     <Col xs={24} sm={12} lg={6} className="crypto-card" key={currency?.uuid}>
