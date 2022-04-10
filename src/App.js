@@ -12,7 +12,13 @@ import {
 
 import "./App.css";
 
+import { withLDProvider, useFlags } from "launchdarkly-react-client-sdk";
+import HelloWorld from './helloWorld'; //We will add this code in the next step
+
 const App = () => {
+
+  const{favoriteCryptocurrency}= useFlags()
+
   return (
     <div className="app">
       <div className="navbar">
@@ -45,6 +51,8 @@ const App = () => {
           >
             Cryptoverse <br />
             All rights reserved
+            {favoriteCryptocurrency? <h1 style={{color: "red"}}>hughug</h1> : <h1 style={{color: "red"}}>sadsad</h1>}
+            <HelloWorld />
           </Typography.Title>
           <Space>
             <Link to="/">Home</Link>
@@ -57,4 +65,20 @@ const App = () => {
   );
 };
 
-export default App;
+export default withLDProvider({
+    clientSideID: process.env.REACT_APP_LAUNCH_DARKLY_CLIENT_ID,
+    user: {
+        key: "zz9ceb",
+        name: "Tony",
+        email: "tony.w.trinh3@gmail.com",
+        custom:{
+          groups:[
+              "Google",
+              "Microsoft"
+              ]
+          }
+    },
+    options: {
+        bootstrap: "localStorage",
+    },
+})(App);
