@@ -17,7 +17,7 @@ import HelloWorld from './helloWorld'; //We will add this code in the next step
 
 const App = () => {
 
-  const{favoriteCryptocurrency}= useFlags()
+  const{showNews }= useFlags()
 
   return (
     <div className="app">
@@ -51,7 +51,7 @@ const App = () => {
           >
             Cryptoverse <br />
             All rights reserved
-            {favoriteCryptocurrency? <h1 style={{color: "red"}}>hughug</h1> : <h1 style={{color: "red"}}>sadsad</h1>}
+            {showNews ? <h1 style={{color: "red"}}>hughug</h1> : <h1 style={{color: "red"}}>sadsad</h1>}
             <HelloWorld />
           </Typography.Title>
           <Space>

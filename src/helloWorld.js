@@ -4,7 +4,7 @@ import { withLDConsumer } from 'launchdarkly-react-client-sdk';
 const HelloWorld = ({ flags }) => {
     console.log("this was fired helow world",flags )
     
-    return flags.favoriteCryptocurrency ? <div>Flag on</div> : <div>Flag off</div>;
+    return flags.showNews  ? <div>Flag on</div> : <div>Flag off</div>;
 };
 
 export default withLDConsumer()(HelloWorld);
