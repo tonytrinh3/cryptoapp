@@ -12,12 +12,9 @@ import {
 
 import "./App.css";
 
-import { withLDProvider, useFlags } from "launchdarkly-react-client-sdk";
-import HelloWorld from './helloWorld'; //We will add this code in the next step
+import { withLDProvider } from "launchdarkly-react-client-sdk";
 
 const App = () => {
-
-  const{showNews }= useFlags()
 
   return (
     <div className="app">
@@ -51,8 +48,6 @@ const App = () => {
           >
             Cryptoverse <br />
             All rights reserved
-            {showNews ? <h1 style={{color: "red"}}>hughug</h1> : <h1 style={{color: "red"}}>sadsad</h1>}
-            <HelloWorld />
           </Typography.Title>
           <Space>
             <Link to="/">Home</Link>
