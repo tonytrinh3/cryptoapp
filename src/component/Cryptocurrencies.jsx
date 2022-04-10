@@ -13,11 +13,12 @@ const Cryptocurrencies = ({ simplified }) => {
 
     useEffect(() => {
         //setCryptos(cryptosList?.data?.coins)
+
         const filteredData = cryptosList?.data?.coins.filter((coin) =>
             coin.name.toLowerCase().includes(searchTerm.toLowerCase())
         );
         setCryptos(filteredData); // this will still render the full list bc searchTerm is empty on render`
-    }, [cryptos, searchTerm]);
+    }, [cryptosList, searchTerm]);
 
     if (isFetching) return "Loading ..."; // apparently this is important when fetching api to make sure if the api is fetched...
 
