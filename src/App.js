@@ -66,7 +66,7 @@ const App = () => {
 };
 
 export default withLDProvider({
-    clientSideID: '6253420d07b2cb14f3ca488c',
+    clientSideID: process.env.REACT_APP_LAUNCH_DARKLY_CLIENT_ID,
     user: {
         key: "zz9ceb",
         name: "Tony",
