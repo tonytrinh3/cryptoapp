@@ -6,13 +6,17 @@ import { Link } from "react-router-dom";
 import { useGetCryptosQuery } from "../services/cryptoApi";
 import { Cryptocurrencies, News } from "../component";
 
+import { useFlags, withLDConsumer } from "launchdarkly-react-client-sdk";
+
 const { Title } = Typography;
 
 const Homepage = () => {
     const { data, isFetching } = useGetCryptosQuery(10);
     const globalStats = data?.data?.stats;
 
-    if (isFetching) return <h1>"Loading ..."</h1>
+    const { showNews } = useFlags();
+
+    if (isFetching) return <h1>"Loading ..."</h1>;
 
     return (
         <>
@@ -54,17 +58,21 @@ const Homepage = () => {
                 </Title>
             </div>
             <Cryptocurrencies simplified />
-            <div className="home-heading-container">
-                <Title level={2} className="home-title">
-                    Latest Crypto News
-                </Title>
-                <Title level={3} className="show-more">
-                    <Link to="/news">Show More</Link>
-                </Title>
-            </div>
-            <News simplified />
+            {showNews && (
+                <>
+                    <div className="home-heading-container">
+                        <Title level={2} className="home-title">
+                            Latest Crypto News
+                        </Title>
+                        <Title level={3} className="show-more">
+                            <Link to="/news">Show More</Link>
+                        </Title>
+                    </div>
+                    <News simplified />
+                </>
+            )}
         </>
     );
 };
 
-export default Homepage;
+export default withLDConsumer()(Homepage);

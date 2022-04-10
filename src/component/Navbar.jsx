@@ -5,8 +5,12 @@ import {Button, Menu, Typography, Avatar} from 'antd';
 import { Link } from 'react-router-dom';
 import {HomeOutlined, MoneyCollectOutlined, BulbOutlined, FundOutlined, MenuOutlined} from '@ant-design/icons'
 import icon from '../images/cryptocurrency.png'
+import { useFlags, withLDConsumer } from "launchdarkly-react-client-sdk";
 
 const Navbar = () => {
+
+    const { showNews } = useFlags();
+
     return (
         <div className="nav-container">
             <div className="logo-container">
@@ -26,9 +30,11 @@ const Navbar = () => {
                 <Menu.Item icon = {<MoneyCollectOutlined/>} key = {3}>
                     <Link to = "/exchanges">Exchanges</Link>
                 </Menu.Item>
+                {showNews && (
                 <Menu.Item icon = {<BulbOutlined/>} key = {4}>
                     <Link to = "/news">News</Link>
                 </Menu.Item>
+                )}
             </Menu>
 
 
@@ -37,4 +43,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default withLDConsumer()(Navbar);
