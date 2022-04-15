@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Live Demo
+
+[Live Demo](https://master.db6fciqri2gxr.amplifyapp.com/)
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -37,4 +41,3 @@ Figure 3. Homepage of App - Before Toggling Flag - Hiding News Component
 
 ![Homepage of App - After Toggling Flag - Showing News Component](/public/After-Flag.PNG)
 Figure 4. Homepage of App - After Toggling Flag - Showing News Component
-
