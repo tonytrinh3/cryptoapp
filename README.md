@@ -6,6 +6,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### [Live Demo](https://master.db6fciqri2gxr.amplifyapp.com/)
+
 ### Crypto App Set Up
 `git clone` `npm install` `npm start`
 
@@ -44,8 +46,6 @@ For Launch Darkly API, after you signed up for the free trial from Launch Darkly
 
 ![Launch Darkly API](/public/Launch-Darkly-API.png)
 Figure 3. Launch Darkly Dashboard - Users
-
-### [Live Demo](https://master.db6fciqri2gxr.amplifyapp.com/)
 
 ### Launch Darkly Implementation - Explanation
 The implementation of the feature flag was done in the most simple fashion in order to first test if the launch darkly integration works properly. The integration of the feature flag was a boolean to hide and unhide the news component. For the User object within launch darkly in order to target the user, it was built in a simple manner to see if it works in the first place. At first it didn't work, but over time, the User object showed up in the Launch Darkly showed up in the dashboard. This allows us to target a certain user in order to launch certain feature based on user (Fig. 4).
