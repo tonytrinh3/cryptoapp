@@ -32,17 +32,17 @@ To populate the API keys to the right the variable, you would go to following li
 
 For these two APIS, copy the "X-RapidAPI-Key" from the "headers" section and save to `.env.local` (Fig. 1 and Fig. 2).
 
-![CoinRanking API](/public/coinranking-api.PNG)
+![CoinRanking API](/public/coinranking-api.png)
 Figure 1. CoinRanking API
 
 
-![Bing News API](/public/bing-news-api.PNG)
+![Bing News API](/public/bing-news-api.png)
 Figure 2. Bing News API
 
 
 For Launch Darkly API, after you signed up for the free trial from Launch Darkly [Launch Darkly](https://app.launchdarkly.com/settings/projects), create a new project for the crypto app and get the Client-side ID for this app (Fig. 3) in `REACT_APP_LAUNCH_DARKLY_CLIENT_ID`.
 
-![Launch Darkly API](/public/Launch-Darkly-API.PNG)
+![Launch Darkly API](/public/Launch-Darkly-API.png)
 Figure 3. Launch Darkly Dashboard - Users
 
 ### [Live Demo](https://master.db6fciqri2gxr.amplifyapp.com/)
