@@ -24,9 +24,9 @@ You may also see any lint errors in the console.
 
 In the root folder of the project, create `.env.local` file to store the API keys for the project and add the below code:
 
-*`REACT_APP_COINRANKING_API_KEY=`
-*`REACT_APP_BING_NEWS_API_KEY=`
-*`REACT_APP_LAUNCH_DARKLY_CLIENT_ID=`
+* `REACT_APP_COINRANKING_API_KEY=`
+* `REACT_APP_BING_NEWS_API_KEY=`
+* `REACT_APP_LAUNCH_DARKLY_CLIENT_ID=`
 
 To populate the API keys to the right the variable, you would go to following link after you signed up in Rapid API and subscribe to the APIs for a free plan:
 [Coinranking](https://rapidapi.com/Coinranking/api/coinranking1/)
