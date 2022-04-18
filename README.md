@@ -9,7 +9,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 In the project directory, you can run:
 
 ### Crypto App Set Up
-`git clone` `npm install` `npm start`
+* `git clone` 
+* `npm install` 
+* `npm start`
 
 You would clone the the repository to get the package.json file. From there you would `npm install` to get the node_modules and such. Then you, would `npm start` to run the test.
 
