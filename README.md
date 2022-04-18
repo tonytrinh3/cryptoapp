@@ -29,8 +29,8 @@ In the root folder of the project, create `.env.local` file to store the API key
 * `REACT_APP_LAUNCH_DARKLY_CLIENT_ID=`
 
 To populate the API keys to the right the variable, you would go to following link after you signed up in Rapid API and subscribe to the APIs for a free plan:
-[Coinranking](https://rapidapi.com/Coinranking/api/coinranking1/)
-[Bing News](https://rapidapi.com/microsoft-azure-org-microsoft-cognitive-services/api/bing-news-search1/)
+* [Coinranking](https://rapidapi.com/Coinranking/api/coinranking1/)
+* [Bing News](https://rapidapi.com/microsoft-azure-org-microsoft-cognitive-services/api/bing-news-search1/)
 
 For these two APIS, copy the "X-RapidAPI-Key" from the "headers" section and save to `.env.local` (Fig. 1 and Fig. 2).
 
