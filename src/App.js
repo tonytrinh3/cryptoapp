@@ -65,7 +65,7 @@ export default withLDProvider({
     user: {
         key: "zz9ceb",
         name: "Tony",
-        email: "tony.w.trinh3@gmail.com",
+        email: "ttrinh@launchdarkly.com",
         custom:{
           groups:[
               "Google",
