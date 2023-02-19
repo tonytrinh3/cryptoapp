@@ -1,9 +1,9 @@
 //jsx is to show react 
 
 import React from 'react'
-import {Button, Menu, Typography, Avatar} from 'antd';
+import { Menu, Typography, Avatar} from 'antd';
 import { Link } from 'react-router-dom';
-import {HomeOutlined, MoneyCollectOutlined, BulbOutlined, FundOutlined, MenuOutlined} from '@ant-design/icons'
+import {HomeOutlined, MoneyCollectOutlined, BulbOutlined, FundOutlined} from '@ant-design/icons'
 import icon from '../images/cryptocurrency.png'
 import { useFlags, withLDConsumer } from "launchdarkly-react-client-sdk";
 
