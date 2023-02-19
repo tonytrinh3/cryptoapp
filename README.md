@@ -58,9 +58,9 @@ Figure 4. Launch Darkly Dashboard - Users
 
 ### Expected Behavior
 
-Through the Launch Darkly Dashboard (Fig. 5), when you toggle the "show news" feature flag from "false" to "true", you are going from hiding the "news" feature (Fig. 6) within the Crypto App website to showing the "news" feature (Fig. 7). 
+Through the Launch Darkly Dashboard (Fig. 5), when you toggle the "show news" feature flag from "false" to "true", you are going from hiding the "news" feature (Fig. 6) within the Crypto App website to showing the "news" feature (Fig. 7). Same thing is going to happen when you toggle "show line chart" to show and hide the line chart when you click into the "Crypto Detail".
 
-![Launch Darkly Dashboard - Feature Flag](/public/Launch-Darkly.PNG)
+![Launch Darkly Dashboard - Feature Flag](/public/Launch-Darkly-Flags.PNG)
 Figure 5. Launch Darkly Dashboard - Feature Flag 
 
 ![Homepage of App - Before Toggling Flag - Hiding News Component](/public/Before-Flag.PNG)
